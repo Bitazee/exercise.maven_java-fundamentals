@@ -92,7 +92,9 @@ public class StringUtilities {
      */
     public static String getSecondWord(String spaceDelimitedString){
 
-        return null;
+        int firstSpaceInSentence = spaceDelimitedString.indexOf(" ");
+
+        return spaceDelimitedString.substring(firstSpaceInSentence + 1);
     }
 
     /**
@@ -101,6 +103,13 @@ public class StringUtilities {
      */
     public static String reverse(String stringToReverse){
 
-        return null;
+        String firstWord = getFirstWord(stringToReverse);
+        String secondWord = getSecondWord(stringToReverse);
+
+        StringBuilder stringCheaterFirstWord = new StringBuilder(firstWord);
+        StringBuilder stringCheaterSecondWord = new StringBuilder(secondWord);
+
+
+        return stringCheaterSecondWord.reverse() + " " + stringCheaterFirstWord.reverse();
     }
 }
