@@ -43,7 +43,7 @@ public class MathUtilities {
      */
     public Byte add(byte baseValue, byte difference) {
 
-        byte total = (byte) (short) add(baseValue, difference);
+        
         return (byte) (short) add(baseValue, difference);
     }
 
